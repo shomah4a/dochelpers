@@ -64,17 +64,6 @@ def paramdoc_generator(_retdoc, _rettype=None, **argd):
     return decorator
 
 
-@paramdoc_generator(u'何か返す', 'str',
-                    a=(u'あいうえお', 'int'),
-                    b=u'かきくけこ',
-                    argl=(u'かきくけこ', 'aaa'))
-def test(a, b, c, *argl, **argd):
-    '''テストですヨ
-    '''
-    pass
-
-
-print test.__doc__
         
 
     
